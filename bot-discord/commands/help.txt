@@ -1,11 +1,11 @@
-$description[## $json[List] | Mục lục Help
-### > $json[Normal] Normal
+$description[## {emoji:list} | Mục lục Help
+### > {emoji:normal} Normal
 **|===========================>**
-### > $json[Fun] Fun
+### > {emoji:fun} Fun
 **|===========================>**
-### > $json[Msc1] Economy 
+### > {emoji:msc,icon} Economy 
 **|===========================>**
-### > $json[Moderator] Moderator
+### > {emoji:moderator} Moderator
 **|===========================>**
 
 ### Note:
