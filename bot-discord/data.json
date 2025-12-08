@@ -1,6 +1,4 @@
 {
-    "id": "$var[id]",
-    "prefix": "$commandTrigger",
     "line": "https://i.imgur.com/JP7RlcY.gif",
     "link": "https://discord.gg/kVFUBmhFEZ",
     "guilds": {
