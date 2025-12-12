@@ -1,0 +1,21 @@
+$description[## {emoji:fun} | Fun
+### {data:prefix}picture <tên>
+➜ [Để xem ảnh anime\]
+### {data:prefix}kbb <ping>
+➜ [Chơi kéo búa bao với ai đó\]
+### {data:prefix}caro
+➜ [Chơi cờ caro với bạn bè\]
+### {data:prefix}dich <ngôn ngữ> <nội dung>
+➜ [Dịch 1 tin nhắn sang ngôn ngữ yêu cầu\]
+### {data:prefix}rip <ping>
+➜ [Cho avt người bị ping lên mộ\]
+### {data:prefix}roplay <tên>
+➜ [Dùng để diễn tả hành động\]
+### {data:prefix}slap <ping>
+➜ [Dùng nếu muốn tát ai đó\]
+### {data:prefix}kiss <ping>
+➜ [Dùng nếu muốn hôn ai đó\]
+]
+$image[{data:line}]
+$footer[{data:footer}]
+$color[505050]

@@ -1,0 +1,25 @@
+$description[## {emoji:moderator} | Moderator
+### {data:prefix}join (<channel ping>)
+➜ [Đặt kênh gửi chào mừng\]
+### {data:prefix}jSetup
+➜ [Đặt Welcome Card tùy chỉnh, {data:prefix}setupJoin để xem rõ\]
+### {data:prefix}leave (<channel ping>)
+➜ [Đặt kênh gửi tạm biệt\]
+### {data:prefix}lSetup
+➜ [Đặt Leave card tùy chỉnh, {data:prefix}setupLeave để xem rõ\]
+### {data:prefix}clear <số lượng> (<ping>)
+➜ [Xoá tin nhắn, có thể xoá tin nhắn 1 người dùng\]
+### {data:prefix}mute <ping> <time> (<lí do>)
+➜ [Dùng để cấm chat ai đó, time: 1m, 5m, 1h, v.v\]
+### {data:prefix}unMute <ping>
+➜ [Dùng để bỏ cấm chat ai đó\]
+### {data:prefix}vSend
+➜ [Gửi tin nhắn có nút để Verify\]
+### {data:prefix}vRole <role ping>
+➜ [Đặt role nhận được sau khi Verify\]
+### {data:prefix}vLog (<channel ping>)
+➜ [Đặt kênh log Verify\]
+]
+$image[{data:line}]
+$footer[{data:footer}]
+$color[505050]

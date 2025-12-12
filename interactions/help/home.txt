@@ -1,1 +1,16 @@
-hi
+$description[## {emoji:list} | Mục lục Help
+### > {emoji:normal} Normal
+**|===========================>**
+### > {emoji:fun} Fun
+**|===========================>**
+### > {emoji:msc,icon} Economy 
+**|===========================>**
+### > {emoji:moderator} Moderator
+**|===========================>**
+
+### Note:
+Dùng `{data:prefix}help <command>` để biết thêm!
+]
+$image[{data:line}]
+$footer[{data:footer}]
+$color[505050]
