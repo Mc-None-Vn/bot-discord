@@ -18,7 +18,7 @@ $addField[**{emoji:members,icon} Số thành viên Trong máy chủ:**;├▹ C�
 └▹ {emoji:members,online} __$numberSeparator[$splitText[2];** **]__ **|** {emoji:members,idle} __$numberSeparator[$splitText[3];** **]__ **|** {emoji:members,dnd} __$numberSeparator[$splitText[4];** **]__ **|** {emoji:members,offline} __$numberSeparator[$splitText[5];** **]__;yes]
 $addField[**{emoji:boost} Server Boost:**;├▹ Cấp $var[Level]
 └▹ $var[Point] Điểm;no]
-$addField[**{emoji: project} Độ bảo mật Của máy chủ:**;└▹ $var[Verify];yes]
+$addField[**{emoji:protect} Độ bảo mật Của máy chủ:**;└▹ $var[Verify];yes]
 $image[{data:line}]
 $footer[{data:footer}]
 $color[00ffff]
