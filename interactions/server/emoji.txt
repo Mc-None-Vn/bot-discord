@@ -1,9 +1,8 @@
-$removeButtons
-$var[emoji;$serverEmojis[$guildID;** **]]
+$removeButtons $ephemeral
+$var[emoji;$serverEmojis[$guildID; ]]
 
-$description[## {emoji:info} | Thông tin Máy chủ
-**{emoji:emoji} Emoji máy chủ:**
-└▹ $var[emoji]]
+$description[## **{emoji:emoji} | Emoji máy chủ**
+# $var[emoji]]
 $image[{data:line}]
 $footer[{data:footer}]
 $color[00ffff]
