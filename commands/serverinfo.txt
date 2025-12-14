@@ -10,7 +10,7 @@ $addField[**{emoji:owner} Owner máy chủ**;└▹ $var[owner];yes]
 $if[$serverDescription!=]
   $addField[** {emoji:empty} Mô tả Máy chủ**;└▹ $serverDescription[$guildID];no]
 $endif
-$addField[**{emoji:boost} Server Boost:** $var[point];{emoji:empty};yes]
+$addField[**{emoji:boost} Server Boost:** $var[point];{emoji:empty};no]
 $addField[**{emoji:boost} Boost Level:** $var[level];{emoji:empty};yes]
 $addField[**{emoji:protect} Độ bảo mật Của máy chủ**;└▹ $var[verify];no]
 $addButton[yes;server$authorID-{data:id}_emoji;Emoji;secondary;no;{emoji:emoji};]
