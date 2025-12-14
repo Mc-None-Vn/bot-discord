@@ -3,11 +3,11 @@ $var[member;$membersCount-$membersCount[online]-$membersCount[idle]-$membersCoun
 $var[member;$var[member]-$calculate[$var[member]]] $textSplit[$var[member];-]
 
 $description[## **{emoji:members,icon} | Thành viên máy chủ**
-├▹ $numberSeparator[$splitText[1];** **] Members
-└▹ {emoji:members,online} __$numberSeparator[$splitText[2];** **]__ Online
-{emoji:empty} {emoji:members,idle} __$numberSeparator[$splitText[3];** **]__ Idle
-{emoji:empty} {emoji:members,dnd} __$numberSeparator[$splitText[4];** **]__ Do Not Disturb
-{emoji:empty} {emoji:members,offline} __$numberSeparator[$splitText[5];** **]__ Offline
+{emoji:empty} $numberSeparator[$splitText[1];** **] Members
+├▹ __$numberSeparator[$splitText[2];** **]__ {emoji:members,online} Online
+├▹ __$numberSeparator[$splitText[3];** **]__ {emoji:members,idle} Idle
+├▹ __$numberSeparator[$splitText[4];** **]__ {emoji:members,dnd} Do Not Disturb
+├▹ __$numberSeparator[$splitText[5];** **]__ {emoji:members,offline} Offline
 ]
 $image[{data:line}] $footer[{data:footer}] $color[00ffff]
 {log:cmd}
