@@ -1,20 +1,15 @@
-$var[member;$membersCount-$membersCount[online]-$membersCount[idle]-$membersCount[dnd]]
-$var[member;$var[member]-$calculate[$var[member]]]
 $var[name;$serverName[$guildID]]
 $var[owner;<@$serverOwner[$guildID]>]
 $var[point;$numberSeparator[$boostCount;** **]]
 $var[verify;$serverVerificationLvl]
 $var[level;$numberSeparator[$boostLevel;** **]]
 
-$textSplit[$var[member];-]
 $description[## {emoji:info} | Thông tin Máy chủ]
 $addField[**{emoji:name} Tên máy chủ:**;└▹ $var[name];no]
 $if[$serverDescription!=]
   $addField[** {emoji:empty} Mô tả Máy chủ:**;└▹ $serverDescription[$guildID];yes]
 $endif
 $addField[**{emoji:owner} Owner máy chủ:**;└▹ $var[owner];no]
-$addField[**{emoji:members,icon} Số thành viên Trong máy chủ:**;├▹ Có $numberSeparator[$splitText[1];** **] Thành viên
-└▹ {emoji:members,online} __$numberSeparator[$splitText[2];** **]__ **|** {emoji:members,idle} __$numberSeparator[$splitText[3];** **]__ **|** {emoji:members,dnd} __$numberSeparator[$splitText[4];** **]__ **|** {emoji:members,offline} __$numberSeparator[$splitText[5];** **]__;yes]
 $addField[**{emoji:boost} Server Boost:**;├▹ Cấp $var[level]
 └▹ $var[point] Điểm;no]
 $addField[**{emoji:protect} Độ bảo mật Của máy chủ:**;└▹ $var[verify];yes]
