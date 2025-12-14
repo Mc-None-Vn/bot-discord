@@ -9,7 +9,7 @@ $if[$serverDescription!=] $var[description;$serverDescription[$guildID]] $endif
 $description[## {emoji:info} | Thông tin Máy chủ]
 $addField[**{emoji:name} Tên máy chủ**;└▹ $var[name];yes]
 $addField[**{emoji:owner} Owner máy chủ**;└▹ $var[owner];yes]
-$addField[** {emoji:empty} Mô tả Máy chủ**;└▹ $var[description];no]
+$addField[**{emoji:empty} Mô tả Máy chủ**;└▹ $var[description];no]
 $addField[**{emoji:boost} Server Boost:** $var[point];{emoji:empty};yes]
 $addField[**{emoji:boost} Boost Level:** $var[level];{emoji:empty};yes]
 $addField[**{emoji:protect} Độ bảo mật Của máy chủ**;└▹ $var[verify];no]
