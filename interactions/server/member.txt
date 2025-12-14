@@ -4,8 +4,6 @@ $var[member;$var[member]-$calculate[$var[member]]] $textSplit[$var[member];-]
 
 $description[## **{emoji:members,icon} | Thành viên máy chủ**
 ├▹ $numberSeparator[$splitText[1];** **] Members
-└▹ {emoji:members,online} __$numberSeparator[$splitText[2];** **]__ **|** {emoji:members,idle} __$numberSeparator[$splitText[3];** **]__ **|** {emoji:members,dnd} __$numberSeparator[$splitText[4];** **]__ **|** {emoji:members,offline} __$numberSeparator[$splitText[5];** **]__;yes]
-$image[{data:line}]
-$footer[{data:footer}]
-$color[00ffff]
+└▹ {emoji:members,online} __$numberSeparator[$splitText[2];** **]__ **|** {emoji:members,idle} __$numberSeparator[$splitText[3];** **]__ **|** {emoji:members,dnd} __$numberSeparator[$splitText[4];** **]__ **|** {emoji:members,offline} __$numberSeparator[$splitText[5];** **]__]
+$image[{data:line}] $footer[{data:footer}] $color[00ffff]
 {log:cmd}

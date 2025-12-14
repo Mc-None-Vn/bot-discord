@@ -11,7 +11,5 @@ $description[## {emoji:list} | Mục lục Help
 ### Note:
 Dùng `{data:prefix}help <command>` để biết thêm!
 ]
-$image[{data:line}]
-$footer[{data:footer}]
-$color[505050]
+$image[{data:line}] $footer[{data:footer}] $color[505050]
 {log:cmd}

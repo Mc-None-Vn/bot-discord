@@ -17,7 +17,5 @@ $addSelectMenuOption[help$authorID-{data:id}_;Normal;help$authorID-{data:id}_nor
 $addSelectMenuOption[help$authorID-{data:id}_;Fun;help$authorID-{data:id}_fun;;;{emoji:fun}]
 $addSelectMenuOption[help$authorID-{data:id}_;Economy;help$authorID-{data:id}_economy;;;{emoji:msc,icon}]
 $addSelectMenuOption[help$authorID-{data:id}_;Moderator;help$authorID-{data:id}_moderator;;;{emoji:moderator}]
-$image[{data:line}]
-$footer[{data:footer}]
-$color[505050]
+$image[{data:line}] $footer[{data:footer}] $color[505050]
 {log:cmd}

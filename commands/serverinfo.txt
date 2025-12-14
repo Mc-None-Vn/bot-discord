@@ -5,17 +5,16 @@ $var[verify;$serverVerificationLvl]
 $var[level;$numberSeparator[$boostLevel;** **]]
 
 $description[## {emoji:info} | Thông tin Máy chủ]
-$addField[**{emoji:name} Tên máy chủ:**;└▹ $var[name];no]
+$addField[**{emoji:name} Tên máy chủ:**;└▹ $var[name];yes]
+$addField[**{emoji:owner} Owner máy chủ:**;└▹ $var[owner];yes]
 $if[$serverDescription!=]
-  $addField[** {emoji:empty} Mô tả Máy chủ:**;└▹ $serverDescription[$guildID];yes]
+  $addField[** {emoji:empty} Mô tả Máy chủ:**;└▹ $serverDescription[$guildID];no]
 $endif
-$addField[**{emoji:owner} Owner máy chủ:**;└▹ $var[owner];no]
 $addField[**{emoji:boost} Server Boost:**;├▹ Cấp $var[level]
-└▹ $var[point] Điểm;no]
+└▹ $var[point] Điểm;yes]
 $addField[**{emoji:protect} Độ bảo mật Của máy chủ:**;└▹ $var[verify];yes]
 $addButton[yes;server$authorID-{data:id}_emoji;Emoji;secondary;no;{emoji:emoji};]
 $addButton[no;server$authorID-{data:id}_member;Members;secondary;no;{emoji:members,icon};]
 $try $image[$guildBanner[$guildID]] $catch $image[{data:line}] $endtry
-$footer[{data:footer}]
-$color[00ffff]
+$footer[{data:footer}] $color[00ffff]
 {log:cmd}

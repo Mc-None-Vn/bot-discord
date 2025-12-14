@@ -1,22 +1,22 @@
 $description[## {emoji:fun} | Fun
 ### {data:prefix}picture <tên>
-➜ [Để xem ảnh anime\]
+➜ Để xem ảnh anime/avatar
 ### {data:prefix}kbb <ping>
-➜ [Chơi kéo búa bao với ai đó\]
+➜ Chơi kéo búa bao với ai đó
 ### {data:prefix}caro
-➜ [Chơi cờ caro với bạn bè\]
+➜ Chơi cờ caro với bạn bè
 ### {data:prefix}dich <ngôn ngữ> <nội dung>
-➜ [Dịch 1 tin nhắn sang ngôn ngữ yêu cầu\]
+➜ Dịch 1 tin nhắn sang ngôn ngữ yêu cầu
 ### {data:prefix}rip <ping>
-➜ [Cho avt người bị ping lên mộ\]
+➜ Cho avt người bị ping lên mộ
 ### {data:prefix}roplay <tên>
-➜ [Dùng để diễn tả hành động\]
+➜ Dùng để diễn tả hành động
 ### {data:prefix}slap <ping>
-➜ [Dùng nếu muốn tát ai đó\]
+➜ Dùng nếu muốn tát ai đó
 ### {data:prefix}kiss <ping>
-➜ [Dùng nếu muốn hôn ai đó\]
+➜ Dùng nếu muốn hôn ai đó
+
+-# Tất cả lệnh không phân biệt chữ hoa/thường
 ]
-$image[{data:line}]
-$footer[{data:footer}]
-$color[505050]
+$image[{data:line}] $footer[{data:footer}] $color[505050]
 {log:cmd}

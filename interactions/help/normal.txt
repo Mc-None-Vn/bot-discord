@@ -1,20 +1,18 @@
 $description[## {emoji:normal} | Normal
 ### {data:prefix}help
-➜ [Hiện các lệnh của Bot mà bạn có thể dùng\]
-### {data:prefix}serverInfo
-➜ [Thông tin của Máy chủ này\]
-### {data:prefix}botInfo
-➜ [Thông tin của Bot __(Có link Invite bot và Server support)__\]
+➜ Hiện các lệnh của Bot mà bạn có thể dùng
+### {data:prefix}serverinfo
+➜ Thông tin của Máy chủ này
+### {data:prefix}botinfo
+➜ Thông tin của Bot __(Có link Invite bot và Server support)__
 ### {data:prefix}math (<phép tính>)
-➜ [Dùng để tính toán\]
-### {data:prefix}color <màu>
-➜ [Xem các thông tin về 1 màu nào đó\]
+➜ Dùng để tính toán
+### {data:prefix}colorinfo <màu>
+➜ Xem các thông tin về 1 màu nào đó
 ### {data:prefix}top
-➜ [Xem bảng xếp hạng\]
-### {data:prefix}gopY <nội dung>
-➜ [Góp ý cho Owner bot\]
+➜ Xem bảng xếp hạng
+
+-# Tất cả lệnh không phân biệt chữ hoa/thường
 ]
-$image[{data:line}]
-$footer[{data:footer}]
-$color[505050]
+$image[{data:line}] $footer[{data:footer}] $color[505050]
 {log:cmd}
