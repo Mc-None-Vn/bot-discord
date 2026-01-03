@@ -29,26 +29,26 @@ def verify_api_key(x_api_key: str | None):
     if not x_api_key or x_api_key not in API_KEYS:
         raise HTTPException(401, "Invalid API key")
 
-async def check_limit(user_id: str):
-    if await redis.exists(f"cd2:{user_id}") == 1:
+def check_limit(user_id: str):
+    if redis.exists(f"cd2:{user_id}"):
         return 2
-    if await redis.exists(f"cd1:{user_id}") == 1:
+    if redis.exists(f"cd1:{user_id}"):
         key = f"rl:{user_id}"
-        count = await redis.incr(key)
+        count = redis.incr(key)
         if count == 1:
-            await redis.expire(key, RATE_WINDOW)
+            redis.expire(key, RATE_WINDOW)
         if count > RATE_LIMIT:
-            await redis.setex(f"cd2:{user_id}", TEMPBAN, 1)
-            await redis.delete(key)
+            redis.setex(f"cd2:{user_id}", TEMPBAN, 1)
+            redis.delete(key)
             return 2
         return 1
     key = f"rl:{user_id}"
-    count = await redis.incr(key)
+    count = redis.incr(key)
     if count == 1:
-        await redis.expire(key, RATE_WINDOW)
+        redis.expire(key, RATE_WINDOW)
     if count > RATE_LIMIT:
-        await redis.delete(key)
-        await redis.setex(f"cd1:{user_id}", COOLDOWN, 1)
+        redis.delete(key)
+        redis.setex(f"cd1:{user_id}", COOLDOWN, 1)
         return 1
     return 0
 
@@ -67,7 +67,7 @@ def safe_path(file_path: str):
 @app.get("/{file_path:path}")
 async def get_static_file(file_path: str = Path(...), id: str = Query(...), x_api_key: str = Header(None)):
     verify_api_key(x_api_key)
-    status = await check_limit(id)
+    status = check_limit(id)
 
     # ===== TEMPBAN =====
     if status == 2:
