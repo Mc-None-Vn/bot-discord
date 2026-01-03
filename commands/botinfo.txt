@@ -1,6 +1,6 @@
 $var[api;41504942-4446-4441-5441-524550454154] $var[p;1]
 $textSplit[$var[dev];|] $httpAddHeader[apikey;{data:key}]
-$httpPost[{data:api}/repeat;{"code":"$optOff[$try$var[q;$if[$checkContains[$var[owner];$splitText[$var[p]]]==true]{emoji:owner}| $elseif[$checkContains[$var[owner];$splitText[$var[p]]]!=true]{emoji:staff}}| $endif]$if[$splitText[$sum[$var[p];1]]!=]├▹$elseif[$splitText[$sum[$var[p];1]]==]└▹$endif $var[q] [$displayName[$splitText[$var[p]]]\](https://cdn.discordapp.com/users/$splitText[$var[p]]/)$endtry $var[p;$sum[$var[p];1]]]","times":"10"}]
+$httpPost[{data:api}/repeat;{"code":"$optOff[$try$var[q\;$if[$checkContains[$var[owner\]\;$splitText[$var[p\]\]\]==true\]{emoji:owner}| $elseif[$checkContains[$var[owner\]\;$splitText[$var[p\]\]\]!=true\]{emoji:staff}}| $endif\]$if[$splitText[$sum[$var[p\]\;1\]\]!=\]├▹$elseif[$splitText[$sum[$var[p\]\;1\]\]==\]└▹$endif $var[q\] [$displayName[$splitText[$var[p\]\]\]\\](https://cdn.discordapp.com/users/$splitText[$var[p\]\]/)$endtry $var[p\;$sum[$var[p\]\;1\]\]\]","times":"10"}]
 $var[dev;$httpResult]
 $var[name;$username[$botID]#$discriminator[$botID]]
 $var[server;$numberSeparator[$serverCount;** **]]
