@@ -10,4 +10,3 @@ $numberSeparator[$splitText[1];** **] Members
 └▹ {emoji:members.offline} __$numberSeparator[$splitText[5];** **]__ Offline
 ]
 $image[{data:line}] $footer[{data:footer}] $color[00ffff]
-{log:cmd}

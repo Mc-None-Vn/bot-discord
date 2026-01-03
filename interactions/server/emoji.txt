@@ -4,4 +4,3 @@ $var[emoji;$serverEmojis[$guildID; ]]
 $description[## **{emoji:emoji} | Emoji máy chủ**
 # $var[emoji]]
 $image[{data:line}] $footer[{data:footer}] $color[00ffff]
-{log:cmd}

@@ -15,4 +15,3 @@ $description[## {emoji:moderator} | Moderator
 -# Tất cả lệnh không phân biệt chữ hoa/thường
 ]
 $image[{data:line}] $footer[{data:footer}] $color[505050]
-{log:cmd}
