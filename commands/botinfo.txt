@@ -1,7 +1,7 @@
 $var[api;41504942-4446-4441-5441-524550454154]
 $textSplit[$var[dev];|] $httpAddHeader[apikey;{data:key}]
 $httpPost[{data:api}/repeat;{"code":"test","times":"10"}]
-$var[dev;$eval[$httpResult]]
+$var[dev;$httpResult]
 $var[name;$username[$botID]#$discriminator[$botID]]
 $var[server;$numberSeparator[$serverCount;** **]]
 $var[member;$numberSeparator[$allMembersCount;** **]]
