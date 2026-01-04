@@ -23,6 +23,7 @@ def _get_by_path(data: dict, path: str):
 
 _EMOJI_RE = re.compile(r"\{emoji:([\w\.]+)\}")
 _DATA_RE  = re.compile(r"\{data:([\w\.]+)\}")
+_REPEAT_RE = re.compile(r"\{repeat(\d+):(.+?)\}")
 
 
 def data(text: str) -> str:
@@ -36,6 +37,12 @@ def data(text: str) -> str:
         val = _get_by_path(data_json, m.group(1))
         return str(val) if val is not None else m.group(0)
 
+    def repl_repeat(m):
+        times = int(m.group(1))
+        content = m.group(2)
+        return content * times
+
     text = _EMOJI_RE.sub(repl_emoji, text)
     text = _DATA_RE.sub(repl_data, text)
+    text = _REPEAT_RE.sub(repl_repeat, text)
     return text
