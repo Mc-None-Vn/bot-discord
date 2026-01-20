@@ -2,11 +2,11 @@
 $removeAllComponents $ephemeral
 $textSplit[$uptime;:] $enableDecimals[yes]
 $httpGet[$getVar[api]/ping?ping=$ping&h=$splitText[1]&m=$splitText[2]&s=$splitText[3]]
-$jsonParse[$replaceText[$httpResult;ms;;2]]
+$jsonSet[ping;$replaceText[$httpResult;ms;;2]]
 
 $addTextDisplay[## **{emoji:ping.icon} | Độ trễ / Uptime**;main]
 $addSeparator[true;;main]
-$addTextDisplay[Total: $calculate[$json[api] + $json[bot]]ms
-├▹ {emoji:ping.api} Api: $json[api]ms
-├▹ {emoji:ping.bot} Bot: $json[bot]ms
-└▹ {emoji:ping.server} Uptime: $httpResult[uptime];main]
+$addTextDisplay[Total: $calculate[$json[ping;api] + $json[ping;bot]]ms
+├▹ {emoji:ping.api} Api: $json[ping;api]ms
+├▹ {emoji:ping.bot} Bot: $json[ping;bot]ms
+└▹ {emoji:ping.server} Uptime: $httpResult[ping;uptime];main]
