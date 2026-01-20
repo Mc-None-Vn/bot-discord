@@ -1,5 +1,5 @@
 #v1
-$ephemeral
+$removeAllComponents $ephemeral
 $var[emoji;$serverEmojis[$guildID; ]]
 
 $description[## **{emoji:emoji} | Emoji máy chủ**
