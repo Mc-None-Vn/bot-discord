@@ -1,5 +1,9 @@
 #v2 #ff0000
-$addTextDisplay[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getVar[bot_rule];{EMOJI};{emoji:rule};1];{EMOJI};⚠️;1];{EMOJI};{emoji:msc.symbol};1];{EMOJI};{emoji:protect};1];{EMOJI};🚫;1];main]
+$textSplit[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getVar[bot_rule];{EMOJI};{emoji:rule};1];{EMOJI};⚠️;1];{EMOJI};{emoji:msc.symbol};1];{EMOJI};{emoji:protect};1];{EMOJI};🚫;1];
+]
+$addTextDisplay[$splitText[<];main]
 $addSeparator[true;;main]
+$addTextDisplay[$replaceText[$splitText[<];
+;;1];main]
 $addActionRow[button;main]
 $addButtonCV2[rule$authorID-$var[id]_;Tôi đồng ý với Thoả thuận;$if[$var[click]==false] $replaceText[success; ;]$else $replaceText[danger; ;]$endif;false;;button]
