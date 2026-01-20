@@ -17,6 +17,7 @@ $addTextDisplay[**{emoji:empty} Mô tả Máy chủ**
 $addTextDisplay[**{emoji:boost} Server Boost:** $var[point];main]
 $addTextDisplay[**{emoji:protect} Độ bảo mật Của máy chủ**
 └▹ $var[verify];main]
+$addSeparator[true;;main] $addActionRow[button;main]
 $addButtonCV2[server$authorID-{data:id}_banner;Banner;secondary;no;{emoji:empty};button]
 $addButtonCV2[server$authorID-{data:id}_emoji;Emoji;secondary;no;{emoji:emoji};button]
 $addButtonCV2[server$authorID-{data:id}_member;Members;secondary;no;{emoji:members.icon};button]

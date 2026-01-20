@@ -16,6 +16,7 @@ $addTextDisplay[**{emoji:global} Tổng Servers / Members:**
 └▹ $var[server] Server và $var[member] Member;main]
 $addTextDisplay[**{emoji:verifybot} Số người sử dụng bot:**
 └▹ $var[user] Người dùng;main]
+$addSeparator[true;;main] $addActionRow[button;main]
 $addButtonCV2[$getBotInvite;Invite Bot;link;no;{emoji:empty};button]
 $addButtonCV2[{data:link};Support Server;link;no;{emoji:empty};button]
 $addButtonCV2[bot$authorID-{data:id}_ping;Ping;secondary;no;{emoji:ping.icon};button]
