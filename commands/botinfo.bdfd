@@ -1,3 +1,4 @@
+#v2
 $textSplit[$var[dev];|]
 $var[dev;{repeat10:$optOff[$try$var[q;$if[$checkContains[$var[owner];$splitText[{count}]]==true]{emoji:owner}| $elseif[$checkContains[$var[owner];$splitText[{count}]]!=true]{emoji:staff}| $endif]$if[$splitText[$sum[{count};1]]!=]├▹$elseif[$splitText[$sum[{count};1]]==]└▹$endif $var[q] [$displayName[$splitText[{count}]]\](https://cdn.discordapp.com/users/$splitText[{count}]/)$endtry]
 }]
@@ -6,12 +7,16 @@ $var[server;$numberSeparator[$serverCount;** **]]
 $var[member;$numberSeparator[$allMembersCount;** **]]
 $var[user;$numberSeparator[$var[user];** **]]
 
-$description[## {emoji:info} | Thông tin Của tôi]
-$addField[**{emoji:name} Tên:**;└▹ $var[name];yes]
-$addField[**{emoji:developer} Developers:**;$var[dev];no]
-$addField[**{emoji:global} Tổng Servers / Members:**;└▹ $var[server] Server và $var[member] Member;yes]
-$addField[**{emoji:verifybot} Số người sử dụng bot:**;└▹ $var[user] Người dùng;yes]
-$addButton[yes;$getBotInvite;Invite Bot;link;no;]
-$addButton[no;{data:link};Support Server;link;no;]
-$addButton[no;bot$authorID-{data:id}_ping;Ping;secondary;no;{emoji:ping.icon};]
-$image[{data:line}] $footer[{data:footer}] $color[00ffff]
+$addTextDisplay[## {emoji:info} | Thông tin Của tôi;main]
+$addTextDisplay[**{emoji:name} Tên:**
+└▹ $var[name];main]
+$addTextDisplay[**{emoji:developer} Developers:**
+$var[dev];main]
+$addTextDisplay[**{emoji:global} Tổng Servers / Members:**
+└▹ $var[server] Server và $var[member] Member;main]
+$addTextDisplay[**{emoji:verifybot} Số người sử dụng bot:**
+└▹ $var[user] Người dùng;main]
+$addButtonCV2[$getBotInvite;Invite Bot;link;no;{emoji:empty};button]
+$addButtonCV2[{data:link};Support Server;link;no;{emoji:empty};button]
+$addButtonCV2[bot$authorID-{data:id}_ping;Ping;secondary;no;{emoji:ping.icon};button]
+#00ccff

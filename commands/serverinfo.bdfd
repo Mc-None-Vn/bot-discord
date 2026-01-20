@@ -1,3 +1,4 @@
+#v2
 $var[name;$serverName[$guildID]]
 $var[owner;<@$serverOwner[$guildID]>]
 $var[description;{emoji:empty}]
@@ -6,13 +7,17 @@ $var[level;$numberSeparator[$boostLevel;** **]]
 $var[verify;$serverVerificationLvl]
 $if[$serverDescription!=] $var[description;$serverDescription[$guildID]] $endif
 
-$description[## {emoji:info} | Thông tin Máy chủ]
-$addField[**{emoji:name} Tên máy chủ**;└▹ $var[name];yes]
-$addField[**{emoji:owner} Owner máy chủ**;└▹ $var[owner];yes]
-$addField[**{emoji:empty} Mô tả Máy chủ**;└▹ $var[description];no]
-$addField[**{emoji:boost} Server Boost:** $var[point];{emoji:empty};yes]
-$addField[**{emoji:protect} Độ bảo mật Của máy chủ**;└▹ $var[verify];no]
-$addButton[yes;server$authorID-{data:id}_emoji;Emoji;secondary;no;{emoji:emoji};]
-$addButton[no;server$authorID-{data:id}_member;Members;secondary;no;{emoji:members.icon};]
-$try $image[$guildBanner[$guildID]] $catch $image[{data:line}] $endtry
-$footer[{data:footer}] $color[00ffff]
+$addTextDisplay[## {emoji:info} | Thông tin Máy chủ;main]
+$addTextDisplay[**{emoji:name} Tên máy chủ**
+└▹ $var[name];main]
+$addTextDisplay[**{emoji:owner} Owner máy chủ**
+└▹ $var[owner];main]
+$addTextDisplay[**{emoji:empty} Mô tả Máy chủ**
+└▹ $var[description];main]
+$addTextDisplay[**{emoji:boost} Server Boost:** $var[point];main]
+$addTextDisplay[**{emoji:protect} Độ bảo mật Của máy chủ**
+└▹ $var[verify];main]
+$addButtonCV2[server$authorID-{data:id}_banner;Banner;secondary;no;{emoji:empty};button]
+$addButtonCV2[server$authorID-{data:id}_emoji;Emoji;secondary;no;{emoji:emoji};button]
+$addButtonCV2[server$authorID-{data:id}_member;Members;secondary;no;{emoji:members.icon};button]
+#00ccff
