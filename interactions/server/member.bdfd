@@ -1,5 +1,5 @@
 #v2 #00ccff
-$removeAllComponents $ephemeral
+$ephemeral $removeAllComponents
 $var[member;$membersCount-$membersCount[online]-$membersCount[idle]-$membersCount[dnd]]
 $var[member;$var[member]-$calculate[$var[member]]] $textSplit[$var[member];-]
 

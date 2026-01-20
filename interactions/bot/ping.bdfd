@@ -1,5 +1,5 @@
 #v2 #00ccff
-$removeAllComponents $ephemeral
+$ephemeral $removeAllComponents
 $textSplit[$uptime;:] $enableDecimals[yes]
 $httpGet[$getVar[api]/ping?ping=$ping&h=$splitText[1]&m=$splitText[2]&s=$splitText[3]]
 $jsonParse[$replaceText[$httpResult;ms;;2]]
