@@ -1,5 +1,4 @@
-#v1 #ff0000
-$author[$displayName[$botOwnerID] - ($username[$botOwnerID])]
-$authorIcon[$userAvatar[$botOwnerID]]
-$description[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getVar[bot_rule];{EMOJI};{emoji:rule};1];{EMOJI};⚠️;1];{EMOJI};{emoji:msc.symbol};1];{EMOJI};{emoji:protect};1];{EMOJI};🚫;1]]
-$addButton[false;rule$authorID-$var[id]_;Tôi đồng ý với Thoả thuận;$if[$var[click]==false] $replaceText[success; ;]$else $replaceText[danger; ;]$endif;false;;]
+#v2 #ff0000
+$addTextDisplay[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getVar[bot_rule];{EMOJI};{emoji:rule};1];{EMOJI};⚠️;1];{EMOJI};{emoji:msc.symbol};1];{EMOJI};{emoji:protect};1];{EMOJI};🚫;1];main]
+$addActionRow[button;main]
+$addButtonCV2[rule$authorID-$var[id]_;Tôi đồng ý với Thoả thuận;$if[$var[click]==false] $replaceText[success; ;]$else $replaceText[danger; ;]$endif;false;;button]
