@@ -1,6 +1,5 @@
-#v1
+#v1 #ff0000
 $author[$displayName[$botOwnerID] - ($username[$botOwnerID])]
 $authorIcon[$userAvatar[$botOwnerID]]
 $description[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getVar[bot_rule];{EMOJI};{emoji:rule};1];{EMOJI};⚠️;1];{EMOJI};{emoji:msc.symbol};1];{EMOJI};{emoji:protect};1];{EMOJI};🚫;1]]
 $addButton[yes;rule$authorID-$var[id]_;Tôi đồng ý với Thoả thuận;danger;$var[click];;]
-#ff0000

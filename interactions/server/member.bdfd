@@ -1,4 +1,4 @@
-#v1
+#v1 #00ccff
 $removeAllComponents $ephemeral
 $var[member;$membersCount-$membersCount[online]-$membersCount[idle]-$membersCount[dnd]]
 $var[member;$var[member]-$calculate[$var[member]]] $textSplit[$var[member];-]
@@ -10,4 +10,3 @@ $numberSeparator[$splitText[1];** **] Members
 ├▹ {emoji:members.dnd} __$numberSeparator[$splitText[4];** **]__ Do Not Disturb
 └▹ {emoji:members.offline} __$numberSeparator[$splitText[5];** **]__ Offline
 ]
-#00ccff

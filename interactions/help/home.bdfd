@@ -1,4 +1,4 @@
-#v1
+#v1 #00ccff
 $description[## {emoji:list} | Mục lục Help
 ### > {emoji:normal} Normal
 **|===========================>**
@@ -12,4 +12,3 @@ $description[## {emoji:list} | Mục lục Help
 ### Note:
 Dùng `{data:prefix}help <command>` để biết thêm!
 ]
-#00ccff

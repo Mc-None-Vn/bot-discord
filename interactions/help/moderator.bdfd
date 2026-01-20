@@ -1,4 +1,4 @@
-#v1
+#v1 #00ccff
 $description[## {emoji:moderator} | Moderator
 ### {data:prefix}join
 ➜ Cài đặt các tùy chỉnh lời chào mừng
@@ -13,4 +13,3 @@ $description[## {emoji:moderator} | Moderator
 
 -# Tất cả lệnh không phân biệt chữ hoa/thường
 ]
-#00ccff

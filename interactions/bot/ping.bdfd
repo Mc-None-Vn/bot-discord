@@ -1,4 +1,4 @@
-#v1
+#v1 #00ccff
 $removeAllComponents $ephemeral
 $textSplit[$uptime;:] $enableDecimals[yes]
 $httpGet[$getVar[api]/ping?ping=$ping&h=$splitText[1]&m=$splitText[2]&s=$splitText[3]]
@@ -10,4 +10,3 @@ Total: $calculate[$json[api] + $json[bot]]ms
 ├▹ {emoji:ping.bot} Bot: $json[bot]ms
 └▹ {emoji:ping.server} Uptime: $httpResult[uptime]
 ]
-#00ccff
