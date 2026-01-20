@@ -1,3 +1,4 @@
+#v1
 $description[## {emoji:msc.icon} | Economy
 ### {data:prefix}daily
 ➜ Nhận tiền hằng ngày
@@ -20,4 +21,4 @@ $description[## {emoji:msc.icon} | Economy
 
 -# Tất cả lệnh không phân biệt chữ hoa/thường
 ]
-$image[{data:line}] $footer[{data:footer}] $color[505050]
+#00ccff

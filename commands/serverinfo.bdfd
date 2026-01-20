@@ -5,9 +5,12 @@ $var[description;{emoji:empty}]
 $var[point;$numberSeparator[$boostCount;** **]]
 $var[level;$numberSeparator[$boostLevel;** **]]
 $var[verify;$serverVerificationLvl]
-$if[$serverDescription!=] $var[description;$serverDescription[$guildID]] $endif
+$if[$serverDescription!=]
+  $var[description;$serverDescription[$guildID]]
+$endif
 
-$addTextDisplay[## {emoji:info} | Thông tin Máy chủ;main] $addSeparator[true;;main]
+$addTextDisplay[## {emoji:info} | Thông tin Máy chủ;main]
+$addSeparator[true;;main]
 $addTextDisplay[**{emoji:name} Tên máy chủ**
 └▹ $var[name];main]
 $addTextDisplay[**{emoji:owner} Owner máy chủ**
