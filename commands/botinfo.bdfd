@@ -18,6 +18,6 @@ $addTextDisplay[**{emoji:global} Tổng Servers / Members:**
 $addTextDisplay[**{emoji:verifybot} Số người sử dụng bot:**
 └▹ $var[user] Người dùng;main]
 $addActionRow[button;main]
-$addButtonCV2[$getBotInvite;Invite bot;link;false;{emoji:empty};button]
-$addButtonCV2[{data:link};Support server;link;false;{emoji:empty};button]
+$addButtonCV2[$getBotInvite;Invite bot;link;false;;button]
+$addButtonCV2[{data:link};Support server;link;false;;button]
 $addButtonCV2[botinfo$authorID-{data:id}_ping;Ping;secondary;false;{emoji:ping.icon};button]
