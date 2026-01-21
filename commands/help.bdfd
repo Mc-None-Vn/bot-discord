@@ -9,7 +9,6 @@ $addTextDisplay[### > {emoji:normal} Normal
 ### Note:
 Dùng `{data:prefix}help <command>` để biết thêm!;main]
 $addActionRow[button;main]
-$addButtonCV2[help$authorID-{data:id}_home;;secondary;true;{emoji:list};button]
 $addButtonCV2[help$authorID-{data:id}_normal;;secondary;false;{emoji:normal};button]
 $addButtonCV2[help$authorID-{data:id}_fun;;secondary;false;{emoji:fun};button]
 $addButtonCV2[help$authorID-{data:id}_economy;;secondary;false;{emoji:msc.icon};button]
