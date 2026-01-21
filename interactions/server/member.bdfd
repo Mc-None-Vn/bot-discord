@@ -4,7 +4,7 @@ $var[member;$membersCount-$membersCount[online]-$membersCount[idle]-$membersCoun
 $var[member;$var[member]-$calculate[$var[member]]] $textSplit[$var[member];-]
 
 $addTextDisplay[## **{emoji:members.icon} | Thành viên máy chủ**;main]
-$addSeparator[true;;]
+$addSeparator[true;;main]
 $addTextDisplay[$numberSeparator[$splitText[1];** **] Members
 ├▹ {emoji:members.online} __$numberSeparator[$splitText[2];** **]__ Online
 ├▹ {emoji:members.idle} __$numberSeparator[$splitText[3];** **]__ Idle
