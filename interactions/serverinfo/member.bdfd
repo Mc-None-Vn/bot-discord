@@ -10,4 +10,5 @@ $addTextDisplay[$numberSeparator[$splitText[1];** **] Members
 ├▹ {emoji:members.idle} __$numberSeparator[$splitText[3];** **]__ Idle
 ├▹ {emoji:members.dnd} __$numberSeparator[$splitText[4];** **]__ Do Not Disturb
 └▹ {emoji:members.offline} __$numberSeparator[$splitText[5];** **]__ Offline;main]
+$addActionRow[button;main]
 $addButtonCV2[serverinfo$authorID-{data:id}_exit;Exit;danger;false;;button]
