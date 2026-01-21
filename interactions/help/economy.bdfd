@@ -23,8 +23,8 @@ $addTextDisplay[### {data:prefix}daily
 
 -# Tất cả lệnh không phân biệt chữ hoa/thường;main]
 $addActionRow[button;main]
-$addButtonCV2[help$authorID-{data:id}_home;Trang Chủ;primary;false;{emoji:list};button]
-$addButtonCV2[help$authorID-{data:id}_normal;Normal;primary;false;{emoji:normal};button]
-$addButtonCV2[help$authorID-{data:id}_fun;Fun;primary;false;{emoji:fun};button]
+$addButtonCV2[help$authorID-{data:id}_home;Trang Chủ;secondary;false;{emoji:list};button]
+$addButtonCV2[help$authorID-{data:id}_normal;Normal;secondary;false;{emoji:normal};button]
+$addButtonCV2[help$authorID-{data:id}_fun;Fun;secondary;false;{emoji:fun};button]
 $addButtonCV2[help$authorID-{data:id}_economy;Economy;secondary;true;{emoji:msc.icon};button]
-$addButtonCV2[help$authorID-{data:id}_moderator;Moderator;primary;false;{emoji:moderator};button]
+$addButtonCV2[help$authorID-{data:id}_moderator;Moderator;secondary;false;{emoji:moderator};button]

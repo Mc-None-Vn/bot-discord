@@ -20,4 +20,4 @@ $addTextDisplay[**{emoji:verifybot} Số người sử dụng bot:**
 $addActionRow[button;main]
 $addButtonCV2[$getBotInvite;Invite bot;link;false;{emoji:empty};button]
 $addButtonCV2[{data:link};Support server;link;false;{emoji:empty};button]
-$addButtonCV2[bot$authorID-{data:id}_ping;Ping;secondary;false;{emoji:ping.icon};button]
+$addButtonCV2[botinfo$authorID-{data:id}_ping;Ping;secondary;false;{emoji:ping.icon};button]
