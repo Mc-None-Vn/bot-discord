@@ -1,6 +1,6 @@
 #v2 #00ccff
-$textSplit[$var[dev];|]
-$var[dev;{repeat10:$optOff[$try$var[q;$if[$checkContains[$var[owner];$splitText[{count}]]==true]{emoji:owner}| $elseif[$checkContains[$var[owner];$splitText[{count}]]!=true]{emoji:staff}| $endif]$if[$splitText[$sum[{count};1]]!=]├▹$elseif[$splitText[$sum[{count};1]]==]└▹$endif $var[q] [$displayName[$splitText[{count}]]\](https://cdn.discordapp.com/users/$splitText[{count}]/)$endtry]
+$jsonParse[{"d": $var[dev]}]
+$var[dev;{repeat10:$optOff[$try$var[q;$if[$checkContains[$var[owner];$json[d;{count}]]==true]{emoji:owner}| $elseif[$checkContains[$var[owner];$json[d;{count}]]==false]{emoji:staff}| $endif]$if[$json[d;$sum[{count};1]]!=]├▹$elseif[$json[d;$sum[{count};1]]==]└▹$endif $var[q] [$displayName[$json[d;{count}]]\](https://cdn.discordapp.com/users/$json[d;{count}]/)$endtry]
 }]
 $var[name;$username[$botID]#$discriminator[$botID]]
 $var[server;$numberSeparator[$serverCount;** **]]
