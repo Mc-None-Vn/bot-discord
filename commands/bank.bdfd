@@ -1,0 +1,12 @@
+#v2 #0a9509
+$addSection[title;main]
+$addTextDisplay[## {emoji:bank} | Ngân hàng;title]
+$addThumbnail[$authorAvatar;;no;title]
+$addTextDisplay[**{emoji:name} Tên tài khoản: **Unknown;title]
+$addTextDisplay[**{emoji:id} Id tài khoản: **Unknown;title]
+$addTextDisplay[**{emoji:card} Số dư trong tài khoản: **__$numberSeparator[$getVar[Bank;$authorID];.]__ **{emoji:msc.}Msc**;main]
+$addSeparator[true;;main]
+$addActionRow[button;main]
+$addButtonCV2[bank$authorID-$messageID_add;Gửi;success;no;⏫;button]
+$addButtonCV2[bank$authorID-$messageID_remove;Rút;success;no;⏬;button]
+$addButtonCV2[bank$authorID-$messageID_pay;Chuyển;success;no;⏭️;button]
