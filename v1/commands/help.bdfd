@@ -7,7 +7,7 @@ $description[## {emoji:list} | Mục lục Help
 
 ### Note:
 Dùng `{data:prefix}help <command>` để biết thêm!]
-$addButton[false;help$authorID-{data:id}_normal;;secondary;false;{emoji:normal}]
-$addButton[false;help$authorID-{data:id}_fun;;secondary;false;{emoji:fun}]
-$addButton[false;help$authorID-{data:id}_economy;;secondary;false;{emoji:msc.icon}]
-$addButton[false;help$authorID-{data:id}_moderator;;secondary;false;{emoji:moderator}]
+$addButton[false;help$authorID-{data:id}_normal;;secondary;false;{emoji:normal};]
+$addButton[false;help$authorID-{data:id}_fun;;secondary;false;{emoji:fun};]
+$addButton[false;help$authorID-{data:id}_economy;;secondary;false;{emoji:msc.icon};]
+$addButton[false;help$authorID-{data:id}_moderator;;secondary;false;{emoji:moderator};]
