@@ -11,4 +11,4 @@ $addTextDisplay[Total: $try$calculate[$json[api] + $json[bot]]$catchN/A$endtry m
 ├▹ {emoji:ping.bot} Bot: $json[bot] ms
 └▹ {emoji:ping.server} Uptime: $json[uptime];main]
 $addActionRow[button;main]
-$addButtonCV2[botinfo$authorID-{data:id}_exit;Exit;danger;false;;button]
+$addButtonCV2[botinfo$authorID-{data:id}_exit;Back;danger;false;{emoji:back};button]
