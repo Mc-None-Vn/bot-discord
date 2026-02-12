@@ -1,4 +1,4 @@
-#v2 #0a9509
+#0a9509
 $addSection[title;main]
 $addTextDisplay[## {emoji:bank} | Ngân hàng;title]
 $addThumbnail[$authorAvatar;;no;title]

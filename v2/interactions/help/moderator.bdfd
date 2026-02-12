@@ -1,4 +1,4 @@
-#v2 #00ccff
+#00ccff
 $removeAllComponents
 $addTextDisplay[## {emoji:moderator} | Moderator;main]
 $addSeparator[true;;main]

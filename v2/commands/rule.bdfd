@@ -1,4 +1,4 @@
-#v2 #ff0000
+#ff0000
 $var[rule;$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getVar[bot_rule];{EMOJI};{emoji:rule};1];{EMOJI};⚠️;1];{EMOJI};{emoji:msc.symbol};1];{EMOJI};{emoji:protect};1];{EMOJI};🚫;1];{EMOJI};🚨;1]]
 $textSplit[$var[rule];
 ]

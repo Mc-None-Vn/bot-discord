@@ -1,4 +1,4 @@
-#v2 #00ccff
+#00ccff
 $var[name;$serverName[$guildID]]
 $var[owner;<@$serverOwner[$guildID]>]
 $var[description;{emoji:empty}]

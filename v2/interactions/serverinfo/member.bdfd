@@ -1,4 +1,4 @@
-#v2 #00ccff
+#00ccff
 $removeAllComponents
 $var[member;$membersCount-$membersCount[online]-$membersCount[idle]-$membersCount[dnd]]
 $var[member;$var[member]-$calculate[$var[member]]] $textSplit[$var[member];-]

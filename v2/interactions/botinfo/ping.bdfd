@@ -1,4 +1,4 @@
-#v2 #00ccff
+#00ccff
 $removeAllComponents
 $textSplit[$uptime;:] $enableDecimals[yes]
 $httpGet[$getVar[api]/ping?ping=$ping&h=$splitText[1]&m=$splitText[2]&s=$splitText[3]]
