@@ -1,17 +1,10 @@
 $removeAllComponents
 $addTextDisplay[## {emoji:normal} | Normal;main]
 $addSeparator[true;;main]
-$addTextDisplay[### {data:prefix}help
-➜ Hiện các lệnh của Bot mà bạn có thể dùng
-### {data:prefix}serverinfo
-➜ Thông tin của Máy chủ này
-### {data:prefix}botinfo
-➜ Thông tin của Bot __(Có link Invite bot và Server support)__
-### {data:prefix}math (<phép tính>)
-➜ Dùng để tính toán
-### {data:prefix}top
-➜ Xem bảng xếp hạng
-
+$jsonParse[$getVar[help]] $jsonParse[$json[normal]]
+{repeat15;$if[$jsonExists[{count}]] $addTextDisplay[### {data;prefix}$json[{count};title]
+➜ $json[{count};description];main] $endif}
+$addTextDisplay[
 -# Tất cả lệnh không phân biệt chữ hoa/thường;main]
 $addActionRow[button;main]
 $addButtonCV2[help$authorID-{data:id}_normal;;secondary;true;{emoji:normal};button]

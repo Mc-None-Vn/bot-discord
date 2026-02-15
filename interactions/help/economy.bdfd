@@ -1,25 +1,10 @@
 $removeAllComponents
 $addTextDisplay[## {emoji:msc.icon} | Economy;main]
 $addSeparator[true;;main]
-$addTextDisplay[### {data:prefix}daily
-➜ Nhận tiền hằng ngày
-### {data:prefix}work
-➜ Làm việc để kiếm tiền
-### {data:prefix}slot <số tiền>
-➜ Để chơi Slots Machine hên xui
-### {data:prefix}taixiu <số tiền>
-➜ Để chơi Tài Xỉu hên xui
-### {data:prefix}inventory
-➜ Mở túi đồ
-### {data:prefix}shop
-➜ Mua đồ dùng
-### {data:prefix}cash
-➜ Xem tiền trong túi __(Tiền Local)__
-### {data:prefix}bank
-➜ Xem tiền trong ngân hàng __(Tiền Global)__
-### {data:prefix}pay <ping> <số tiền>
-➜ Đưa tiền mặt cho người khác
-
+$jsonParse[$getVar[help]] $jsonParse[$json[economy]]
+{repeat15;$if[$jsonExists[{count}]] $addTextDisplay[### {data;prefix}$json[{count};title]
+➜ $json[{count};description];main] $endif}
+$addTextDisplay[
 -# Tất cả lệnh không phân biệt chữ hoa/thường;main]
 $addActionRow[button;main]
 $addButtonCV2[help$authorID-{data:id}_normal;;secondary;false;{emoji:normal};button]

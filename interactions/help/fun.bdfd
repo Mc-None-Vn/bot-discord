@@ -1,15 +1,10 @@
 $removeAllComponents
 $addTextDisplay[## {emoji:fun} | Fun;main]
 $addSeparator[true;;main]
-$addTextDisplay[### {data:prefix}picture <tên>
-➜ Để xem ảnh anime/avatar
-### {data:prefix}rcb <ping>
-➜ Chơi kéo búa bao với ai đó
-### {data:prefix}caro
-➜ Chơi cờ caro với bạn bè
-### {data:prefix}translate <ngôn ngữ> <nội dung>
-➜ Dịch 1 tin nhắn sang ngôn ngữ yêu cầu
-
+$jsonParse[$getVar[help]] $jsonParse[$json[fun]]
+{repeat15;$if[$jsonExists[{count}]] $addTextDisplay[### {data;prefix}$json[{count};title]
+➜ $json[{count};description];main] $endif}
+$addTextDisplay[
 -# Tất cả lệnh không phân biệt chữ hoa/thường;main]
 $addActionRow[button;main]
 $addButtonCV2[help$authorID-{data:id}_normal;;secondary;false;{emoji:normal};button]

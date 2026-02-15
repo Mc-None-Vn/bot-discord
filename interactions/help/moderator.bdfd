@@ -1,17 +1,10 @@
 $removeAllComponents
 $addTextDisplay[## {emoji:moderator} | Moderator;main]
 $addSeparator[true;;main]
-$addTextDisplay[### {data:prefix}join
-➜ Cài đặt các tùy chỉnh lời chào mừng
-### {data:prefix}leave
-➜ Cài đặt các tùy chỉnh lời tạm biệt
-### {data:prefix}clear <số lượng> (<ping>)
-➜ Xoá tin nhắn, có thể xoá tin nhắn 1 người dùng (đếm cả tin nhắn không phải của người dùng để đúng hơn)
-### {data:prefix}mod <ping>
-➜ Hiển thị bảng quản lý người dùng
-### {data:prefix}verify
-➜ Cài đặt các tùy chỉnh xác minh
-
+$jsonParse[$getVar[help]] $jsonParse[$json[moderator]]
+{repeat15;$if[$jsonExists[{count}]] $addTextDisplay[### {data;prefix}$json[{count};title]
+➜ $json[{count};description];main] $endif}
+$addTextDisplay[
 -# Tất cả lệnh không phân biệt chữ hoa/thường;main]
 $addActionRow[button;main]
 $addButtonCV2[help$authorID-{data:id}_normal;;secondary;false;{emoji:normal};button]
