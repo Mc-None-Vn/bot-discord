@@ -1,9 +1,9 @@
 $removeAllComponents
 $addTextDisplay[## {emoji:moderator} | Moderator;main]
 $addSeparator[true;;main]
-$jsonParse[$getVar[help]] $jsonParse[$json[moderator]]
-{repeat15;$if[$jsonExists[{count}]] $addTextDisplay[### {data;prefix}$json[{count};title]
-➜ $json[{count};description];main] $endif}
+$jsonParse[$getVar[help]] $var[help;moderator]
+{repeat15;$if[$jsonExists[$var[help];{count}]] $addTextDisplay[### {data;prefix}$json[$var[help];{count};title]
+➜ $json[$var[help];{count};description];main] $endif}
 $addTextDisplay[
 -# Tất cả lệnh không phân biệt chữ hoa/thường;main]
 $addActionRow[button;main]
