@@ -2,7 +2,7 @@ $removeAllComponents
 $addTextDisplay[## {emoji:fun} | Fun;main]
 $addSeparator[true;;main]
 $jsonParse[$getVar[help]] $var[help;fun]
-{repeat15;$if[$jsonExists[$var[help];{count}]] $addTextDisplay[### {data;prefix}$json[$var[help];{count};title]
+{repeat15:$if[$jsonExists[$var[help];{count}]] $addTextDisplay[### {data;prefix}$json[$var[help];{count};title]
 ➜ $json[$var[help];{count};description];main] $endif}
 $addTextDisplay[
 -# Tất cả lệnh không phân biệt chữ hoa/thường;main]
