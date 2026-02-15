@@ -1,6 +1,6 @@
 $removeAllComponents
 $textSplit[$uptime;:] $enableDecimals[yes]
-$httpGet[$getVar[api]/ping?ping=$executionTime&h=$splitText[1]&m=$splitText[2]&s=$splitText[3]]
+$httpGet[$getVar[api]/ping?ping=$var[ping]&h=$splitText[1]&m=$splitText[2]&s=$splitText[3]]
 $jsonParse[$httpResult]
 
 $addTextDisplay[## **{emoji:ping.icon} | Độ trễ / Uptime**;main]
